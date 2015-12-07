@@ -70,19 +70,19 @@ app/                    --> all of the source files for the application
   components/           --> all app specific modules
     version/              --> version related components
       version.js                 --> version module declaration and basic "version" value service
-      version_test.js            --> "version" value service tests
+      version.spec.js            --> "version" value service tests
       version-directive.js       --> custom directive that returns the current app version
-      version-directive_test.js  --> version directive tests
+      version-directive.spec.js  --> version directive tests
       interpolate-filter.js      --> custom interpolation filter
-      interpolate-filter_test.js --> interpolate filter tests
+      interpolate-filter.spec.js --> interpolate filter tests
   view1/                --> the view1 view template and logic
     view1.html            --> the partial template
     view1.js              --> the controller logic
-    view1_test.js         --> tests of the controller
+    view1.spec.js         --> tests of the controller
   view2/                --> the view2 view template and logic
     view2.html            --> the partial template
     view2.js              --> the controller logic
-    view2_test.js         --> tests of the controller
+    view2.spec.js         --> tests of the controller
   app.js                --> main application module
 e2e-tests/            --> end-to-end tests
   protractor-conf.js    --> Protractor config file
@@ -103,7 +103,7 @@ The angular-seed app comes preconfigured with unit tests. These are written in
 configuration file to run them.
 
 * the configuration is found at `karma.conf.js`
-* the unit tests are found next to the code they are testing and are named as `..._test.js`.
+* the unit tests are found next to the code they are testing and are named as `*.spec.js`.
 
 The easiest way to run the unit tests is to use the supplied npm script:
 
